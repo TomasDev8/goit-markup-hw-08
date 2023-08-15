@@ -1,0 +1,23 @@
+//.base
+@import '../sass/base/commons';
+
+//.components
+@import '../sass/components/modal-form';
+@import '../sass/components/modal';
+@import '../sass/components/backdrop.scss';
+
+//.layout
+@import '../sass/layout/header';
+@import '../sass/layout/mobile-menu';
+@import '../sass/layout/hero';
+@import '../sass/layout/second-section';
+@import '../sass/layout/third-section';
+@import '../sass/layout/fourthsection';
+@import '../sass/layout/fifth-section';
+@import '../sass/layout/footer';
+@import '../sass/layout/portafolio';
+
+//.utils
+@import '../sass/utils/container';
+@import '../sass/utils/variables';
+@import '../sass/utils/visually-hidden';

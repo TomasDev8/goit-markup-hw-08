@@ -1,0 +1,148 @@
+.mobile-menu {
+    max-width: 480px;
+    padding: 10px 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    padding: 48px 40px;
+    width: 100%;
+
+    background-color: $primary-white-color;
+}
+
+.is-open {
+    display: block;
+}
+
+.dropdown__btn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.dropdown__btn--close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.dropdown__menu {
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.dropdown__list {
+    text-decoration: none;
+    margin-bottom: 306px;
+}
+
+.dropdown__link {
+    color: $text-primary-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color $action-total-time $action-time;
+
+    @extend %links-hover-focus;
+
+    &--current {
+        color: $accent-color;
+    }
+}
+
+.dropdown__item:not(:last-child) {
+    display: block;
+    margin-bottom: 32px;
+}
+
+
+.dropdown__contacts {
+    margin-bottom: 64px;
+}
+
+.dropdown__contact {
+    text-decoration: none;
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color $action-total-time $action-time;
+
+    @extend %links-hover-focus;
+}
+
+.dropdown__contact--small-size {
+    font-size: 24px;
+    color: $text-p-color;
+}
+
+.dropdown__icon {
+    display: none;
+    margin-right: 10px;
+    fill: currentColor;
+
+    @extend %links-hover-focus;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+}
+
+.social-links__item {
+    padding: 0 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+}

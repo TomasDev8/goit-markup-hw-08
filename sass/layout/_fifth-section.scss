@@ -1,0 +1,40 @@
+.clients {
+  display: flex;
+  margin: 0;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  border: 1px solid $no-accent-color;
+  border-radius: 4px;
+  color: $no-accent-color;
+  transition: color $action-total-time $action-time, border-color $action-total-time $action-time;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
